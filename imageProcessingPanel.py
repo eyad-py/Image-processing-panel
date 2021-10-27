@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python  ### this line for linux 
 from tkinter import *
 from tkinter import filedialog
 from PIL import ImageTk , Image          # We need pillow to visualize image in tkinter in an easy way 
