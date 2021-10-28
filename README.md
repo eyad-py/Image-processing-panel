@@ -19,4 +19,4 @@ In this section, you can use <strong><em>Dilation</em></strong>, <strong><em>Ero
 In this section, you can use <strong><em>ScharrX</em></strong>, <strong><em>ScharrY</em></strong>, <strong><em>Laplacian</em></strong>, <strong><em>Canny</em></strong>, <strong><em>SobelX</em></strong>, or <strong><em>SobelY</em></strong>.
 
 ## Note
-I attached the image that I used "image1.jpg" and you can find a video of the program run too "image processing panel video.mp4" and there is a "requirements.txt" do not forget it
+I attached the image that I used <strong><em>"image1.jpg"</em></strong> and you can find a video of the program run too <strong><em>"image processing panel video.mp4"</em></strong> and there is a <strong><em>"requirements.txt"</em></strong> do not forget it
