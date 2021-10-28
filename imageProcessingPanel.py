@@ -211,10 +211,10 @@ class image_processing():
     def color_tracking(self,colors):
         self.hsv = cv2.cvtColor(self.img, cv2.COLOR_RGB2HSV)# change the color space to HSV 
         if colors == 2: 
-            # define range of red color in HSV
+            # define range of blue color in HSV
             self.lower = np.array([90,50, 50])
             self.upper = np.array([120, 255,255])
-            # Threshold the HSV image using inRange function to get only red colors
+            # Threshold the HSV image using inRange function to get only blue colors
             self.mask = cv2.inRange(self.hsv, self.lower, self.upper)
             self.width = int(self.img.shape[1]) # image width
             self.height = int(self.img.shape[0]) # image height
@@ -223,10 +223,10 @@ class image_processing():
             self.result = cv2.bitwise_and(self.img,self.img, mask= self.mask) # result of adding the original image and mask together
             self.Apply(self.result)# pass the result to apply function
         elif colors == 3:
-            # define range of red color in HSV
+            # define range of green color in HSV
             self.lower = np.array([36, 25, 25])
             self.upper = np.array([70, 255,255])
-            # Threshold the HSV image using inRange function to get only red colors
+            # Threshold the HSV image using inRange function to get only green colors
             self.mask = cv2.inRange(self.hsv, self.lower, self.upper)
             self.width = int(self.img.shape[1])
             self.height = int(self.img.shape[0])
